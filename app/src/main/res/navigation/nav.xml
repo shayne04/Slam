@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/knowMeFragment">
+
+    <fragment
+        android:id="@+id/knowMeFragment"
+        android:name="com.example.slam.KnowMeFragment"
+        android:label="Know Me">
+        <action
+            android:id="@+id/action_knowMe_to_favoriteThings"
+            app:destination="@id/favoriteThingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoriteThingsFragment"
+        android:name="com.example.slam.FaveThingsFragment"
+        android:label="Favorite Things">
+        <action
+            android:id="@+id/action_favoriteThings_to_finalThoughts"
+            app:destination="@id/finalThoughtsFragment" />
+        <action
+            android:id="@+id/action_favoriteThings_to_knowMe"
+            app:destination="@id/knowMeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/finalThoughtsFragment"
+        android:name="com.example.slam.FinalThoughtsFragment"
+        android:label="Final Thoughts">
+        <action
+            android:id="@+id/action_finalThoughts_to_favoriteThings"
+            app:destination="@id/favoriteThingsFragment" />
+    </fragment>
+</navigation>

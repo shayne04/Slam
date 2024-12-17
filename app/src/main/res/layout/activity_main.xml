@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink7"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slams"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/pink1"/>
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Slams"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/pink1"
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+   <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/slamRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_slam_entry"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/addSlam" />
+
+
+    <Button
+        android:id="@+id/addSlam"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/icon_create"
+        android:text="Add"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/pink1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

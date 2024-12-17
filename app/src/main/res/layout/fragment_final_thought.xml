@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pink7"
+    tools:context=".FinalThoughtsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearFinalThoughts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_activity"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hobby"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Hobby"
+                android:inputType="text"
+                android:gravity="start|top"
+                android:background="@drawable/input_background"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_good"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/good"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Something You're Good At"
+                android:inputType="text"
+                android:background="@drawable/input_background"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:startIconDrawable="@drawable/icon_bad"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bad"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Something You're Bad At"
+                android:inputType="text"
+                android:gravity="start|top"
+                android:background="@drawable/input_background"
+                android:textColorHint="#BC000000"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_proud"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proud"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Something You're Proud Of"
+                android:inputType="text"
+                android:gravity="start|top"
+                android:background="@drawable/input_background"
+                android:textColorHint="#BC000000"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_fact"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/funFact"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Interesting fact about yourself!"
+                android:inputType="text"
+                android:gravity="start|top"
+                android:background="@drawable/input_background"
+                android:textColorHint="#BC000000"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

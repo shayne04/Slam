@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pink7"
+    tools:context=".ViewSlam">
+
+    <LinearLayout
+        android:id="@+id/addSlam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/pink1">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/icon_back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slam"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:gravity="center" />
+
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERSONAL INFORMATION"
+            android:textSize="18sp"
+            android:textColor="@color/pink1"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/detailNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nickname: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailBirthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthdate:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAVORITES"
+            android:textSize="18sp"
+            android:textColor="@color/pink1"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/detailFaveColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorite Color:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sport:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailPlaceToGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place to Go:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailRoleModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role Model:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quote to Live By:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTHERS"
+            android:textSize="18sp"
+            android:textColor="@color/pink1"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/detailHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobby:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good at:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailBad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bad at:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailProud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proud of:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/detailFunFact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fun Fact:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Slam"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/pink1"
+            android:textColor="@color/white"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

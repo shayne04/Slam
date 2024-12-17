@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Details"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/editNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nickname"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editBirthdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birthdate"
+            android:textColorHint="@color/black"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <Spinner
+            android:id="@+id/spinnerGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+        <EditText
+            android:id="@+id/editContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorites"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editFaveColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Favorite Color"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editSport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Favorite Sport"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editPlaceToGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place to Go"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editFaveSong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Favorite Song"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editFaveMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Favorite Movie"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editRoleModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Role Model"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quote to Live By"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editHobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hobby"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Good at"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editBad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bad at"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/editProud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Proud of"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editFunfact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Funfact"
+            android:textColorHint="@color/black"
+            android:inputType="text" />
+
+    </LinearLayout>
+</ScrollView>

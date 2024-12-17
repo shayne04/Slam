@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pink7"
+    tools:context=".FavesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearFave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="15dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_color"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/favColor"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Favorite Color"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_sport"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sport"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Sport"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_place"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/placeToGo"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Place to Go"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_movie"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/movie"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Movie"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_song"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/song"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Song"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_name"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/roleModel"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Role Model"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/icon_qoute"
+            app:endIconMode="clear_text"
+            app:hintEnabled="false"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/quote"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="Quote to Live By"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#BC000000" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
